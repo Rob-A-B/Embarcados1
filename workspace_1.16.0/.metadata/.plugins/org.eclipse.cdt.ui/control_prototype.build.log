@@ -1,0 +1,93 @@
+09:09:40 **** Incremental Build of configuration Debug for project control_prototype ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'lerJoystick':
+../Core/Src/main.c:156:38: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  156 |           HAL_UART_Transmit(&huart2, "R\n\r", sizeof("R\n\r"), HAL_MAX_DELAY);
+      |                                      ^~~~~~~
+      |                                      |
+      |                                      char *
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:450,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:159:38: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  159 |           HAL_UART_Transmit(&huart2, "L\n\r", sizeof("L\n\r"), HAL_MAX_DELAY);
+      |                                      ^~~~~~~
+      |                                      |
+      |                                      char *
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:165:7: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  165 |       sprintf(str,"X: %d \n\r" ,vrxValue);
+      |       ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:165:7: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  165 |       sprintf(str,"X: %d \n\r" ,vrxValue);
+      |       ^~~~~~~
+../Core/Src/main.c:165:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:165:24: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  165 |       sprintf(str,"X: %d \n\r" ,vrxValue);
+      |                       ~^        ~~~~~~~~
+      |                        |        |
+      |                        int      uint32_t {aka long unsigned int}
+      |                       %ld
+../Core/Src/main.c:167:33: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  167 |       HAL_UART_Transmit(&huart2,str , sizeof(str), HAL_MAX_DELAY);
+      |                                 ^~~
+      |                                 |
+      |                                 char *
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:172:38: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  172 |           HAL_UART_Transmit(&huart2, "Up\n\r", sizeof("Up\n\r"), HAL_MAX_DELAY);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      char *
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:175:38: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  175 |           HAL_UART_Transmit(&huart2, "Down\n\r", sizeof("Down\n\r"), HAL_MAX_DELAY);
+      |                                      ^~~~~~~~~~
+      |                                      |
+      |                                      char *
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:180:25: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  180 |       sprintf(str2,"Y: %d\n\r" ,vryValue);
+      |                        ~^       ~~~~~~~~
+      |                         |       |
+      |                         int     uint32_t {aka long unsigned int}
+      |                        %ld
+../Core/Src/main.c:182:34: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  182 |       HAL_UART_Transmit(&huart2, str2 , sizeof(str2), HAL_MAX_DELAY);
+      |                                  ^~~~
+      |                                  |
+      |                                  char *
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1696:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1696 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "control_prototype.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="control_prototype.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: control_prototype.elf
+ 
+arm-none-eabi-size  control_prototype.elf 
+arm-none-eabi-objdump -h -S control_prototype.elf  > "control_prototype.list"
+   text	   data	    bss	    dec	    hex	filename
+  22024	     92	   2244	  24360	   5f28	control_prototype.elf
+Finished building: default.size.stdout
+ 
+Finished building: control_prototype.list
+ 
+
+09:09:43 Build Finished. 0 errors, 10 warnings. (took 2s.716ms)
+

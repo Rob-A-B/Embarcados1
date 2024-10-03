@@ -1,0 +1,42 @@
+2024-09-12 11:24:49,890 [INFO] WebApp:189 - Connection lost
+2024-09-12 11:25:37,722 [INFO] WebApp:186 - Connection restablished
+2024-09-12 12:08:41,045 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 910554744 Bytes (1073741824)
+2024-09-12 12:08:44,381 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 939385888 Bytes (1073741824)
+2024-09-12 12:08:47,537 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 743067056 Bytes (1073741824)
+2024-09-12 12:08:47,745 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-12 12:08:47,745 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-12 12:08:47,745 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-12 12:08:47,745 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-12 12:08:47,745 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-12 12:08:47,747 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-09-12 12:08:47,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\license.tmp_save
+2024-09-12 12:08:48,079 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\license.tmp
+2024-09-12 12:08:48,165 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\gpio.tmp_save
+2024-09-12 12:08:48,333 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\gpio.tmp
+2024-09-12 12:08:48,573 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\stm32l4xx_it.c_save
+2024-09-12 12:08:48,800 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\stm32l4xx_it.c
+2024-09-12 12:08:48,824 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\stm32l4xx_it.h_save
+2024-09-12 12:08:48,919 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\stm32l4xx_it.h
+2024-09-12 12:08:48,957 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\stm32l4xx_hal_msp.c_save
+2024-09-12 12:08:49,088 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\stm32l4xx_hal_msp.c
+2024-09-12 12:08:49,099 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\system.tmp_save
+2024-09-12 12:08:49,172 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\MXTmpFiles\system.tmp
+2024-09-12 12:08:49,208 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\stm32l4xx_hal_conf.h_save
+2024-09-12 12:08:49,309 [INFO] CodeEngine:335 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\stm32l4xx_hal_conf.h
+2024-09-12 12:08:49,365 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\main.h_save
+2024-09-12 12:08:49,517 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Inc\main.h
+2024-09-12 12:08:49,541 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\main.c_save
+2024-09-12 12:08:49,669 [INFO] CodeEngine:279 - Generated code: C:\Users\User\STM32CubeIDE\workspace_1.16.0\control_prototype\Core\Src\main.c
+2024-09-12 12:08:50,223 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 339mS.
+2024-09-12 12:08:50,228 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-09-12 12:08:50,334 [INFO] ConfigFileManager:1531 - The Die is : DIE415
+2024-09-12 12:08:51,421 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1192mS.
+2024-09-12 12:08:51,422 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-12 12:08:51,428 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-12 14:11:25,436 [INFO] WebApp:189 - Connection lost
+2024-09-12 14:11:25,781 [INFO] WebApp:186 - Connection restablished
+2024-09-12 15:28:30,794 [INFO] WebApp:189 - Connection lost
+2024-09-12 15:28:32,892 [INFO] WebApp:186 - Connection restablished
+2024-09-12 15:28:36,221 [INFO] WebApp:189 - Connection lost
+2024-09-12 15:28:36,486 [INFO] WebApp:186 - Connection restablished
+2024-09-12 15:30:05,225 [INFO] WebApp:189 - Connection lost
